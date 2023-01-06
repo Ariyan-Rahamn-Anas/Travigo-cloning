@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*======================--- custom scroll bar ---=============================*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+    background:#01f788;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #01f788;
+}
+
+nav #icon{
+    color: rgb(238, 7, 7);
+    font-size: 1.8rem;
+    line-height: 5rem;
+    float: right;
+    margin-right: 2.5rem;
+    cursor: pointer;
+    display: none;
+}
+nav ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    display: block;
+    margin: auto;
+}
+nav ul li:hover::after{
+    width: 100%;
+    transition-duration: 500ms;
+}
+.explore{
+    background-image: linear-gradient( #defff0 10%, #9afbce 60%, white);
+}
+.plan .bttn{
+    margin: 0 auto;
+    padding: .8rem 0;
+    width: 19rem;
+    border: 2px solid rgb(238, 248, 255);
+    border-radius: 50px;
+    background: #FFFFFF;
+    box-shadow:  20px 20px 52px #ffffff,
+             -20px -20px 52px #ffffff;
+}
+
+.plan ul li:hover{
+    color: #05cf6d;
+}
+.plan ul li:nth-child(1) {
+    list-style-image: url(./green\ check.svg);
+}
+.plan ul li:nth-child(2) {
+    list-style-image: url(./green\ check.svg);
+}
+.plan ul li:nth-child(3) {
+    list-style-image: url(./green\ check.svg);
+}
+.plan ul li{
+
+    list-style-image: url(./yellow\ checkbox.svg);
+}
+.plan .div2 ul li{
+    list-style-image: url(./green\ check.svg);
+}
+.plan .banner{
+    min-height: 45vh;
+    background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0)),url(./img/banner.bcdb1b00040dad16f82b.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: .5rem;
+}
+.mainContact{
+    min-height: 45vh;
+    background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0)),url(./img/wave.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: .5rem;
+}
+.contact{
+    background-image: linear-gradient( #defff0 10%, #9afbce 60%, white);
+}
+.contact .footer .styleFont{
+    font-family: 'Great Vibes', cursive;
+}
